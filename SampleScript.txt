@@ -1,0 +1,493 @@
+//Sample Output from an instance of the Virtual Drone program with number of drones (7) set as a command line parameter
+
+Script started on Tue 28 Oct 2014 08:01:55 PM EDT
+timberlake {~/CSE321} > make clean
+
+rm -f drone
+rm -f *.o
+timberlake {~/CSE321} > make
+
+gcc drone.c -c -o drone.o
+gcc ground.c -c -o ground.o
+gcc flight.c -c -o flight.o
+gcc problems.c -c -o problems.o
+gcc drone.o ground.o flight.o problems.o -o drone -lpthread
+timberlake {~/CSE321} > ./drone 7
+
+Drone 2 is registered in the system.  Moving to launch sequence.
+Drone 1 is registered in the system.  Moving to launch sequence.
+Drone 3 is registered in the system.  Moving to launch sequence.
+Drone 7 is registered in the system.  Moving to launch sequence.
+Drone 6 is registered in the system.  Moving to launch sequence.
+Drone 4 is registered in the system.  Moving to launch sequence.
+Drone 5 is registered in the system.  Moving to launch sequence.
+Drone 2 is assigned to launch gate...awaiting mission.
+Drone 1 is assigned to launch gate...awaiting mission.
+Drone 3 is assigned to launch gate...awaiting mission.
+Drone 4 is assigned to launch gate...awaiting mission.
+Drone 7 is assigned to launch gate...awaiting mission.
+Drone 6 is assigned to launch gate...awaiting mission.
+Drone 5 is assigned to launch gate...awaiting mission.
+Mission target being assigned to drone 1 now.
+Mission target being assigned to drone 2 now.
+Mission target being assigned to drone 3 now.
+Mission target being assigned to drone 5 now.
+Mission target being assigned to drone 6 now.
+Mission target being assigned to drone 7 now.
+Mission target being assigned to drone 4 now.
+Drone 2 has a target at (45,5).
+Drone 1 has a target at (33,8).
+Drone 3 has a target at (11,13).
+Drone 5 has a target at (0,35).
+Drone 6 has a target at (11,27).
+Drone 7 has a target at (32,18).
+Drone 4 has a target at (36,20).
+Drone 2 requesting clearance for takeoff.
+Clearance granted for drone 2.
+Drone 2 is currently at (25,25).
+Drone 1 requesting clearance for takeoff.
+Drone 5 requesting clearance for takeoff.
+Drone 6 requesting clearance for takeoff.
+Drone 3 requesting clearance for takeoff.
+Drone 7 requesting clearance for takeoff.
+Drone 4 requesting clearance for takeoff.
+Drone 2 has taken off from the launch pad.
+Drone 2 is currently at (26,25).
+Drone 2 has reached cruising altitude.
+Drone 2 Avoiding Drone Near (26, 25)!!!
+Drone 2 is currently at (27,25).
+Drone 2 is on the way to target.
+Drone 2 is currently at (28,25).
+Clearance granted for drone 1.
+Drone 1 is currently at (25,25).
+Drone 1 has taken off from the launch pad.
+Drone 1 is currently at (26,25).
+Drone 2 is currently at (29,25).
+Drone 1 has reached cruising altitude.
+Drone 1 Avoiding Drone Near (26, 25)!!!
+Drone 2 is currently at (30,25).
+Drone 1 is currently at (27,25).
+Drone 2 is currently at (31,25).
+Drone 1 is on the way to target.
+Drone 2 is currently at (32,25).
+Drone 1 is currently at (28,26).
+Drone 2 is currently at (32,25).
+Clearance granted for drone 5.
+Drone 5 is currently at (25,25).
+Drone 5 has taken off from the launch pad.
+Drone 5 is currently at (26,25).
+Drone 2 is currently at (33,25).
+Drone 1 is currently at (29,27).
+Drone 5 has reached cruising altitude.
+Drone 5 Avoiding Drone Near (26, 25)!!!
+Drone 2 is currently at (35,25).
+Drone 5 is currently at (27,28).
+Drone 2 is currently at (35,25).
+Drone 5 is on the way to target.
+Drone 5 is currently at (27,26).
+Drone 2 is currently at (36,25).
+Clearance granted for drone 6.
+Drone 2 is currently at (37,25).
+Drone 6 has taken off from the launch pad.
+Drone 6 is currently at (26,25).
+Drone 6 has reached cruising altitude.
+Drone 6 Avoiding Drone Near (26, 25)!!!
+Drone 6 is currently at (27,26).
+Drone 2 is currently at (39,25).
+Drone 5 is currently at (27,29).
+Drone 6 is on the way to target.
+Drone 1 is currently at (33,22).
+Drone 5 is currently at (27,30).
+Drone 2 is currently at (40,25).
+Clearance granted for drone 3.
+Drone 3 is currently at (25,25).
+Drone 1 is currently at (33,22).
+Drone 2 is currently at (41,25).
+Drone 5 is currently at (27,31).
+Drone 2 is currently at (41,25).
+Drone 3 has taken off from the launch pad.
+Drone 3 is currently at (26,25).
+Drone 1 is currently at (33,20).
+Drone 3 has reached cruising altitude.
+Drone 3 Avoiding Drone Near (26, 25)!!!
+Drone 2 is currently at (43,25).
+Drone 1 is currently at (33,20).
+Drone 2 is currently at (43,25).
+Drone 6 is currently at (25,27).
+Drone 3 is currently at (27,25).
+Drone 2 is currently at (43,25).
+Drone 5 is currently at (27,34).
+Drone 1 is currently at (33,18).
+Drone 3 is on the way to target.
+Drone 6 is currently at (24,27).
+Drone 3 is currently at (27,24).
+Drone 2 is currently at (44,25).
+Clearance granted for drone 7.
+Drone 7 is currently at (25,25).
+Drone 1 is currently at (33,17).
+Drone 6 is currently at (23,27).
+Drone 3 is currently at (27,23).
+Drone 2 is currently at (45,25).
+Drone 7 has taken off from the launch pad.
+Drone 7 is currently at (26,25).
+Drone 5 is currently at (26,35).
+Drone 5 is currently at (26,35).
+Drone 1 is currently at (33,16).
+Drone 6 is currently at (22,27).
+Drone 7 has reached cruising altitude.
+Drone 7 Avoiding Drone Near (26, 25)!!!
+Drone 2 is currently at (45,24).
+Drone 3 is currently at (27,22).
+Drone 5 is currently at (25,35).
+Drone 1 is currently at (33,15).
+Drone 6 is currently at (21,27).
+Drone 2 is currently at (45,23).
+Drone 7 is currently at (27,25).
+Drone 3 is currently at (27,21).
+Drone 5 is currently at (24,35).
+Drone 1 is currently at (33,14).
+Drone 6 is currently at (20,27).
+Drone 2 is currently at (45,22).
+Drone 7 is on the way to target.
+Clearance granted for drone 4.
+Drone 7 is currently at (28,25).
+Drone 5 is currently at (23,35).
+Drone 1 is currently at (33,13).
+Drone 6 is currently at (19,27).
+Drone 2 is currently at (45,21).
+Drone 7 is currently at (29,25).
+Drone 4 has taken off from the launch pad.
+Drone 4 is currently at (26,25).
+Drone 3 is currently at (27,19).
+Drone 5 is currently at (22,35).
+Drone 1 is currently at (33,12).
+Drone 6 is currently at (18,27).
+Drone 2 is currently at (45,20).
+Drone 7 is currently at (30,25).
+Drone 4 has reached cruising altitude.
+Drone 4 Avoiding Drone Near (26, 25)!!!
+Drone 3 is currently at (27,18).
+Drone 5 is currently at (21,35).
+Drone 1 is currently at (33,11).
+Drone 2 is currently at (45,19).
+Drone 7 is currently at (31,25).
+Drone 4 is currently at (27,25).
+Drone 3 is currently at (27,17).
+Drone 5 is currently at (20,35).
+Drone 1 is currently at (33,10).
+Drone 2 is currently at (45,18).
+Drone 6 is currently at (16,27).
+Drone 7 is currently at (32,25).
+Drone 4 is on the way to target.
+Drone 4 is currently at (28,25).
+Drone 3 is currently at (27,16).
+Drone 5 is currently at (19,35).
+Drone 1 is currently at (33,9).
+Drone 2 is currently at (45,17).
+Drone 6 is currently at (15,27).
+Drone 7 is currently at (32,24).
+Drone 4 is currently at (29,25).
+Drone 3 is currently at (27,15).
+Drone 5 is currently at (18,35).
+Drone 1 is currently at (33,8).
+Drone 2 is currently at (45,16).
+Drone 6 is currently at (14,27).
+Drone 7 is currently at (32,23).
+Drone 4 is currently at (30,25).
+Drone 3 is currently at (27,14).
+Target reached by drone 1.
+Drone 5 is currently at (17,35).
+Drone 2 is currently at (45,15).
+Drone 6 is currently at (13,27).
+Drone 7 is currently at (32,22).
+Drone 4 is currently at (31,25).
+Drone 3 is currently at (27,13).
+Drone 5 is currently at (16,35).
+Drone 6 is currently at (12,27).
+Drone 2 is currently at (45,14).
+Drone 7 is currently at (32,21).
+Drone 4 is currently at (32,25).
+Drone 3 is currently at (26,13).
+Drone 5 is currently at (15,35).
+Drone 6 is currently at (11,27).
+Drone 2 is currently at (45,13).
+Drone 7 is currently at (32,20).
+Drone 4 is currently at (33,25).
+Drone 3 is currently at (25,13).
+Drone 1 has delivered its payload!  Time to head home!
+Drone 5 is currently at (14,35).
+Target reached by drone 6.
+Drone 2 is currently at (45,12).
+Drone 7 is currently at (32,19).
+Drone 4 is currently at (34,25).
+Drone 3 is currently at (24,13).
+Drone 1 is now enroute to base.
+Drone 5 is currently at (13,35).
+Drone 2 is currently at (45,11).
+Drone 7 is currently at (32,18).
+Drone 4 is currently at (35,25).
+Drone 3 is currently at (23,13).
+Drone 5 is currently at (12,35).
+Drone 2 is currently at (45,10).
+Target reached by drone 7.
+Drone 4 is currently at (36,25).
+Drone 3 is currently at (22,13).
+Drone 4 is currently at (36,25).
+Drone 1 is currently at (33,9).
+Drone 5 is currently at (11,35).
+Drone 6 has delivered its payload!  Time to head home!
+Drone 2 is currently at (45,9).
+Drone 3 is currently at (21,13).
+Drone 4 is currently at (36,24).
+Drone 1 is currently at (33,10).
+Drone 5 is currently at (10,35).
+Drone 6 is now enroute to base.
+Drone 2 is currently at (45,8).
+Drone 4 is currently at (36,23).
+Drone 1 is currently at (33,11).
+Drone 5 is currently at (9,35).
+Drone 7 has delivered its payload!  Time to head home!
+Drone 2 is currently at (45,7).
+Drone 4 is currently at (36,22).
+Drone 3 is currently at (19,13).
+Drone 1 is currently at (33,12).
+Drone 5 is currently at (8,35).
+Drone 6 is currently at (12,27).
+Drone 7 is now enroute to base.
+Drone 2 is currently at (45,6).
+Drone 4 is currently at (36,21).
+Drone 3 is currently at (18,13).
+Drone 1 is currently at (33,13).
+Drone 5 is currently at (7,35).
+Drone 6 is currently at (13,27).
+Drone 2 is currently at (45,5).
+Drone 4 is currently at (36,20).
+Drone 3 is currently at (17,13).
+Drone 1 is currently at (33,14).
+Drone 5 is currently at (6,35).
+Drone 7 is currently at (32,19).
+Target reached by drone 2.
+Drone 6 is currently at (14,27).
+Target reached by drone 4.
+Drone 3 is currently at (16,13).
+Drone 1 is currently at (33,15).
+Drone 5 is currently at (5,35).
+Drone 7 is currently at (32,20).
+Drone 6 is currently at (15,27).
+Drone 3 is currently at (15,13).
+Drone 1 is currently at (33,16).
+Drone 5 is currently at (4,35).
+Drone 7 is currently at (32,21).
+Drone 6 is currently at (16,27).
+Drone 3 is currently at (14,13).
+Drone 1 is currently at (33,17).
+Drone 5 is currently at (3,35).
+Drone 2 has delivered its payload!  Time to head home!
+Drone 7 is currently at (32,22).
+Drone 6 is currently at (17,27).
+Drone 4 has delivered its payload!  Time to head home!
+Drone 3 is currently at (13,13).
+Drone 1 is currently at (33,18).
+Drone 5 is currently at (2,35).
+Drone 2 is now enroute to base.
+Drone 7 is currently at (32,23).
+Drone 6 is currently at (18,27).
+Drone 4 is now enroute to base.
+Drone 3 is currently at (12,13).
+Drone 1 is currently at (33,19).
+Drone 5 is currently at (1,35).
+Drone 7 is currently at (32,24).
+Drone 6 is currently at (19,27).
+Drone 3 is currently at (11,13).
+Drone 1 is currently at (33,20).
+Drone 5 is currently at (0,35).
+Drone 2 is currently at (45,6).
+Drone 7 is currently at (32,25).
+Drone 6 is currently at (20,27).
+Drone 4 is currently at (36,21).
+Target reached by drone 3.
+Drone 1 is currently at (33,21).
+Target reached by drone 5.
+Drone 2 is currently at (45,7).
+Drone 7 is currently at (31,25).
+Drone 6 is currently at (21,27).
+Drone 4 is currently at (36,22).
+Drone 1 is currently at (33,22).
+Drone 2 is currently at (45,8).
+Drone 7 is currently at (30,25).
+Drone 6 is currently at (22,27).
+Drone 4 is currently at (36,23).
+Drone 1 is currently at (33,23).
+Drone 2 is currently at (45,9).
+Drone 7 is currently at (29,25).
+Drone 6 is currently at (23,27).
+Drone 4 is currently at (36,24).
+Drone 3 has delivered its payload!  Time to head home!
+Drone 5 has delivered its payload!  Time to head home!
+Drone 1 is currently at (33,24).
+Drone 2 is currently at (45,10).
+Drone 7 is currently at (28,25).
+Drone 6 is currently at (24,27).
+Drone 4 is currently at (36,25).
+Drone 3 is now enroute to base.
+Drone 5 is now enroute to base.
+Drone 1 is currently at (33,25).
+Drone 2 is currently at (45,11).
+Drone 7 is currently at (27,25).
+Drone 6 is currently at (25,27).
+Drone 4 is currently at (35,25).
+Drone 1 is currently at (32,25).
+Drone 2 is currently at (45,12).
+Drone 7 is currently at (26,25).
+Drone 6 is currently at (25,26).
+Drone 4 is currently at (34,25).
+Drone 3 is currently at (12,13).
+Drone 5 is currently at (1,35).
+Drone 1 is currently at (31,25).
+Drone 2 is currently at (45,13).
+Drone 7 is currently at (25,25).
+Drone 4 is currently at (33,25).
+Drone 6 Avoiding Drone Near (25, 26)!!!
+Drone 3 is currently at (13,13).
+Drone 5 is currently at (2,35).
+Drone 1 is currently at (30,25).
+Drone 2 is currently at (45,14).
+Drone 7 is ready to land at the base.
+Drone 6 is currently at (26,26).
+Drone 4 is currently at (32,25).
+Drone 3 is currently at (14,13).
+Drone 5 is currently at (3,35).
+Drone 1 is currently at (29,25).
+Drone 2 is currently at (45,15).
+Drone 3 is currently at (15,13).
+Drone 5 is currently at (4,35).
+Drone 1 is currently at (28,25).
+Drone 2 is currently at (45,16).
+Drone 6 Avoiding Drone Near (26, 25)!!!
+Drone 4 is currently at (30,25).
+Drone 3 is currently at (16,13).
+Drone 5 is currently at (5,35).
+Drone 1 Avoiding Drone Near (28, 25)!!!
+Drone 2 is currently at (45,17).
+Drone 7 on final approach.  Mission Complete!
+Drone 6 is currently at (27,25).
+Drone 4 Avoiding Drone Near (30, 25)!!!
+Drone 3 is currently at (17,13).
+Drone 5 is currently at (6,35).
+Drone 1 is currently at (29,25).
+Drone 2 is currently at (45,18).
+Drone 6 is currently at (26,25).
+Drone 4 is currently at (31,25).
+Drone 3 is currently at (18,13).
+Drone 5 is currently at (7,35).
+Drone 1 is currently at (28,25).
+Drone 2 is currently at (45,19).
+Drone 6 is currently at (25,25).
+Drone 4 is currently at (30,25).
+Drone 3 is currently at (19,13).
+Drone 5 is currently at (8,35).
+Drone 1 is currently at (27,25).
+Drone 2 is currently at (45,20).
+Drone 4 is currently at (29,25).
+Drone 6 is ready to land at the base.
+Drone 3 is currently at (20,13).
+Drone 5 is currently at (9,35).
+Drone 1 is currently at (26,25).
+Drone 2 is currently at (45,21).
+Drone 4 is currently at (28,25).
+Drone 3 is currently at (21,13).
+Drone 5 is currently at (10,35).
+Drone 1 Avoiding Drone Near (26, 25)!!!
+Drone 2 is currently at (45,22).
+Drone 4 Avoiding Drone Near (28, 25)!!!
+Drone 3 is currently at (22,13).
+Drone 5 is currently at (11,35).
+Drone 1 is currently at (27,25).
+Drone 2 is currently at (45,23).
+Drone 6 on final approach.  Mission Complete!
+Drone 4 is currently at (29,25).
+Drone 3 is currently at (23,13).
+Drone 1 is currently at (26,25).
+Drone 2 is currently at (45,24).
+Drone 4 is currently at (28,25).
+Drone 3 is currently at (24,13).
+Drone 5 is currently at (13,35).
+Drone 1 is currently at (25,25).
+Drone 2 is currently at (45,25).
+Drone 4 is currently at (27,25).
+Drone 3 is currently at (25,13).
+Drone 1 is ready to land at the base.
+Drone 5 is currently at (14,35).
+Drone 2 is currently at (44,25).
+Drone 4 is currently at (26,25).
+Drone 3 is currently at (25,14).
+Drone 5 is currently at (15,35).
+Drone 4 Avoiding Drone Near (26, 25)!!!
+Drone 3 is currently at (25,15).
+Drone 2 is currently at (42,25).
+Drone 5 is currently at (16,35).
+Drone 4 is currently at (27,25).
+Drone 3 is currently at (25,16).
+Drone 1 on final approach.  Mission Complete!
+Drone 2 is currently at (41,25).
+Drone 5 is currently at (17,35).
+Drone 4 is currently at (26,25).
+Drone 3 is currently at (25,17).
+Drone 2 is currently at (40,25).
+Drone 5 is currently at (18,35).
+Drone 4 is currently at (25,25).
+Drone 3 is currently at (25,18).
+Drone 2 is currently at (39,25).
+Drone 5 is currently at (19,35).
+Drone 4 is ready to land at the base.
+Drone 3 is currently at (25,19).
+Drone 2 is currently at (38,25).
+Drone 5 is currently at (20,35).
+Drone 3 is currently at (25,20).
+Drone 2 is currently at (37,25).
+Drone 5 is currently at (21,35).
+Drone 3 is currently at (25,21).
+Drone 2 is currently at (36,25).
+Drone 5 is currently at (22,35).
+Drone 4 on final approach.  Mission Complete!
+Drone 3 is currently at (25,22).
+Drone 2 is currently at (35,25).
+Drone 5 is currently at (23,35).
+Drone 3 is currently at (25,23).
+Drone 2 is currently at (34,25).
+Drone 5 is currently at (24,35).
+Drone 3 is currently at (25,24).
+Drone 2 is currently at (33,25).
+Drone 5 is currently at (25,35).
+Drone 3 is currently at (25,25).
+Drone 2 is currently at (32,25).
+Drone 5 is currently at (25,34).
+Drone 3 is ready to land at the base.
+Drone 2 is currently at (31,25).
+Drone 5 is currently at (25,33).
+Drone 2 is currently at (30,25).
+Drone 5 is currently at (25,32).
+Drone 2 is currently at (29,25).
+Drone 5 is currently at (25,31).
+Drone 3 on final approach.  Mission Complete!
+Drone 2 is currently at (28,25).
+Drone 5 is currently at (25,30).
+Drone 2 is currently at (27,25).
+Drone 5 is currently at (25,29).
+Drone 2 is currently at (26,25).
+Drone 5 is currently at (25,28).
+Drone 2 is currently at (25,25).
+Drone 5 is currently at (25,27).
+Drone 2 is ready to land at the base.
+Drone 5 is currently at (25,26).
+Drone 5 Avoiding Drone Near (25, 26)!!!
+Drone 5 is currently at (26,26).
+Drone 2 on final approach.  Mission Complete!
+Drone 5 is currently at (26,25).
+Drone 5 is currently at (25,25).
+Drone 5 is ready to land at the base.
+Drone 5 on final approach.  Mission Complete!
+All drones accounted for.  Good Night!
+timberlake {~/CSE321} > ^Dexit
+
+Script done on Tue 28 Oct 2014 08:04:13 PM EDT
